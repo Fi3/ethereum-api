@@ -345,7 +345,7 @@ contract usingOraclize {
             return true;
         }
         if (getCodeSize(0x51efaF4c8B3C9AfBD5aB9F4bbC82784Ab6ef8fAA)>0){ //browser-solidity
-            OAR = OraclizeAddrResolverI(0x51efaF4c8B3C9AfBD5aB9F4bbC82784Ab6ef8fAA);
+            OAR = OraclizeAddrResolverI(0x9425187f87c1dc20e7bbdc8851e9f2341f798c24);
             return true;
         }
         return false;
