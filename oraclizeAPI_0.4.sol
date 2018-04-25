@@ -348,6 +348,9 @@ contract usingOraclize {
             OAR = OraclizeAddrResolverI(0x0e971e80ee436780e120d1d4837b392d21407638);
             return true;
         }
+	if (getCodeSize(0x0e971e80ee436780e120d1d4837b392d21407638)>0){ //remix-plugin
+            OAR = OraclizeAddrResolverI(0x0e971e80ee436780e120d1d4837b392d21407638);
+	}
         return false;
     }
 
