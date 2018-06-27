@@ -345,11 +345,12 @@ contract usingOraclize {
             return true;
         }
         if (getCodeSize(0x51efaF4c8B3C9AfBD5aB9F4bbC82784Ab6ef8fAA)>0){ //browser-solidity
-            OAR = OraclizeAddrResolverI(0x0e971e80ee436780e120d1d4837b392d21407638);
+            OAR = OraclizeAddrResolverI(0x51efaF4c8B3C9AfBD5aB9F4bbC82784Ab6ef8fAA);
             return true;
         }
 	if (getCodeSize(0x0e971e80ee436780e120d1d4837b392d21407638)>0){ //remix-plugin
-            OAR = OraclizeAddrResolverI(0x0e971e80ee436780e120d1d4837b392d21407638);
+            // OAR = OraclizeAddrResolverI(0x0e971e80ee436780e120d1d4837b392d21407638);
+	    OAR = OraclizeAddrResolverI(0x51efaF4c8B3C9AfBD5aB9F4bbC82784Ab6ef8fAA);
 	}
         return false;
     }
