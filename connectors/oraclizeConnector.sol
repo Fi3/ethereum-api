@@ -381,11 +381,13 @@ contract Oraclize {
         return queryN(_timestamp, _datasource, _args, _gaslimit);
     }
 
+		event Prova(string hg);
     function query1(uint _timestamp, string _datasource, string _arg, uint _gaslimit)
     payable
     public
     returns (bytes32 _id)
     {
+			emit Prova('PROVAAA!!');
         costs(_datasource, _gaslimit);
     	if ((_timestamp > now+3600*24*60)||(_gaslimit > block.gaslimit)) throw;
 
